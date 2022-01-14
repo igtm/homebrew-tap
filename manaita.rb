@@ -5,20 +5,20 @@
 class Manaita < Formula
   desc "Simple Markdown-Driven Code Generator written by Go"
   homepage "https://github.com/igtm/manaita"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.3/manaita_1.0.3_Darwin_arm64.tar.gz"
-      sha256 "a89ad403ff5f82fd8504787225da66929dbe57bd579f3d7e2de840266f87be49"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.4/manaita_1.0.4_Darwin_arm64.tar.gz"
+      sha256 "5cc285a4e0e55ac81ae9d364873f23d1b7510567fd5d4c020e0d49df29f8fa80"
 
       def install
         bin.install "manaita"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.3/manaita_1.0.3_Darwin_x86_64.tar.gz"
-      sha256 "267389de3b318a751a9fccdfbc09b5534b053f470db1ff54cddf3ee75974b0bf"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.4/manaita_1.0.4_Darwin_x86_64.tar.gz"
+      sha256 "859e23b83ac7ab35423f98866195ea3c52a7782c4e9038efaa31155821cba398"
 
       def install
         bin.install "manaita"
@@ -28,16 +28,16 @@ class Manaita < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.3/manaita_1.0.3_Linux_arm64.tar.gz"
-      sha256 "0d92a79f50f4a7b79a4d38e0c9ad8122655eb9173908f62339eb4751810dbd99"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.4/manaita_1.0.4_Linux_arm64.tar.gz"
+      sha256 "2ef33320139859de9444d4657bc43a8b06c0f551eb74285c5605b578a5dcb479"
 
       def install
         bin.install "manaita"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.3/manaita_1.0.3_Linux_x86_64.tar.gz"
-      sha256 "799053f9c6316df90b4ca4a954be32dbd42bde2253356d6c393ff6bec98d3865"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.4/manaita_1.0.4_Linux_x86_64.tar.gz"
+      sha256 "b655bdd65df88c1313085e9f3b61c1b5b543d52e14a3b4a77f92f271b5256ef2"
 
       def install
         bin.install "manaita"
