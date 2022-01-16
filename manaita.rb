@@ -5,20 +5,20 @@
 class Manaita < Formula
   desc "Simple Markdown-Driven Scaffolding tool written by Go"
   homepage "https://github.com/igtm/manaita"
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.5/manaita_1.0.5_Darwin_x86_64.tar.gz"
-      sha256 "af251b63013ddf6d24a84a092a8163413476fe0d9366848749197d3eb5a107c8"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.6/manaita_1.0.6_Darwin_x86_64.tar.gz"
+      sha256 "ea74de5e4235e1c0749465d54da7e158df7b9f5e00c76aee658825b74c75755c"
 
       def install
         bin.install "manaita"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.5/manaita_1.0.5_Darwin_arm64.tar.gz"
-      sha256 "082343eea37df24c0ab97b4ca6894c9dd2f253405acc70450a734372aedd91dc"
+      url "https://github.com/igtm/manaita/releases/download/v1.0.6/manaita_1.0.6_Darwin_arm64.tar.gz"
+      sha256 "5897a66c9c6be24ee7e337dcf13a65e2801af3652c22ed374ec1669a0075a86e"
 
       def install
         bin.install "manaita"
@@ -27,17 +27,17 @@ class Manaita < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.5/manaita_1.0.5_Linux_arm64.tar.gz"
-      sha256 "a98cba14f5a4ab0b706efe3a2a3c6b01e63af4fc988d64d858d67565ecd080bb"
+    if Hardware::CPU.intel?
+      url "https://github.com/igtm/manaita/releases/download/v1.0.6/manaita_1.0.6_Linux_x86_64.tar.gz"
+      sha256 "2274bdefbe59f78db190794d28e09c141f17d0647ee54715a7b41f8b7a102c92"
 
       def install
         bin.install "manaita"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/igtm/manaita/releases/download/v1.0.5/manaita_1.0.5_Linux_x86_64.tar.gz"
-      sha256 "c03e274fac9c822dbe9da74789c1dc6ed0c0fb23001e4e3adda91aff964e0bf1"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/igtm/manaita/releases/download/v1.0.6/manaita_1.0.6_Linux_arm64.tar.gz"
+      sha256 "7739aacc5e7950560d0bbd852a373faabcf9c3ee53773341bb16ee4fc289f52a"
 
       def install
         bin.install "manaita"
