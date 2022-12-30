@@ -9,7 +9,7 @@ class OpenapiYupGenerator < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/igtm/openapi-yup-generator/releases/download/v0.0.7/openapi-yup-generator_v0.0.7_x86_64-apple-darwin.tar.gz"
-      sha256 "29addc364ae1be35072dfad68b5a88b1f20e388d721ae98dd6aa341166d46078"
+      sha256 "f249d5c6275ff04686c7aa41db38fbeeaee1be81cf125354676c31bdb6fca324"
 
       def install
         bin.install "openapi-yup-generator"
@@ -17,7 +17,7 @@ class OpenapiYupGenerator < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/igtm/openapi-yup-generator/releases/download/v0.0.7/openapi-yup-generator_v0.0.7_aarch64-apple-darwin.tar.gz"
-      sha256 "c22a7d9120c8ff04ecd355a244f937ec966c5db01d4db0b2def8b08eeb675090"
+      sha256 "9a26bb55a46bae78815ddf6a5399573bb3ced7cc606bceed923965d06eb56243"
 
       def install
         bin.install "openapi-yup-generator"
@@ -28,7 +28,7 @@ class OpenapiYupGenerator < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/igtm/openapi-yup-generator/releases/download/v0.0.7/openapi-yup-generator_v0.0.7_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6cbb1a290fcee8de760d5f651801d80fb5984a85a433d944cbbbbc15d3d9113a"
+      sha256 "72727b757ac2efdeafa8bccf697162f07e47221739353670e4c75ae785898289"
 
       def install
         bin.install "openapi-yup-generator"
@@ -36,7 +36,7 @@ class OpenapiYupGenerator < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/igtm/openapi-yup-generator/releases/download/v0.0.7/openapi-yup-generator_v0.0.7_aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c6cd4754bfcbd32b2d0b75f1fc61ad98a53c17c3721638faca5baa7e2774e934"
+      sha256 "187662783fefa900a3befeaeaade7a0e10f2682c85be91782fc9998ca2b6ccd0"
 
       def install
         bin.install "openapi-yup-generator"
